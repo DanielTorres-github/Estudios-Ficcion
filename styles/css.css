@@ -1,15 +1,23 @@
 body {
   margin: 0px;
-  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.colBody{
+h2 {
+  color: tan;
+  width: 100%;
+}
+h4 {
+  color: tan;
+  width: 100%;
+}
+.colBody {
   flex: 1;
 }
-
+/*--------------------------------------------------------------------*/
+/*-----------------------Caracteristicas del jider--------------------*/
 header {
   width: 100%;
   height: 60px;
@@ -24,7 +32,8 @@ header p {
   size: 15px;
   padding-left: 10px;
 }
-/*Barra de navegacion---------------------*/
+/*---------------------------------------------------------------------*/
+/*--------------------------Barra de navegacion------------------------*/
 nav ul {
   list-style-type: none;
   display: flex;
@@ -32,16 +41,15 @@ nav ul {
 nav ul li {
   padding: 10px;
 }
-nav ul li:hover{
+nav ul li:hover {
   background-color: rgb(189, 144, 86);
-
 }
 a {
   color: inherit;
   text-decoration: none;
 }
-/*----------------------------------------*/
-/*Texto y backgroud de presentacion-----*/
+/*-------------------------------------------------------------------*/
+/*------------------Texto y backgroud de presentacion----------------*/
 .main {
   width: 100%;
   height: 400px;
@@ -53,40 +61,33 @@ a {
 }
 .maintext {
   margin-bottom: 50px;
-  color: tan; 
+  color: tan;
   text-align: center;
   background-color: rgba(0, 0, 0, 75%);
 }
-/*----------------------------------------*/
-/* Division en dos del layaout------------*/
+/*--------------------------------------------------------------------*/
+/*----------------------------Division en dos del layaout------------*/
 .twoSections {
   background-color: #e4e2de;
   display: flex;
 }
-.left  {
+/*--------------------------left and right del layout del home---------*/
+.left {
   margin: 100px 250px;
-
 }
 .leftUp {
   text-align: center;
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   margin-bottom: 100px;
 }
-.leftUp h2{
-  color: tan;
-}
-.leftDown h4{
-  color: tan;
-}
-
 .right {
   margin: 250px 100px;
   border-left: 3px solid tan;
 }
-/*----------------------------------------*/
-/* Imagenes del inicio--------------------*/
+/*--------------------------------------------------------------------*/
+/*--------------------Imagenes del inicio(right del home)-------------*/
 .cards {
   width: 50px;
   height: auto;
@@ -99,20 +100,27 @@ a {
   opacity: 1;
   background: black;
 }
-/*------------------------------------------*/
-/* pie de pagina----------------------------*/
+/*----------------------------------------------------------------------*/
+/*-------------------------------pie de pagina----------------------------*/
 footer {
   background-color: tan;
   width: 100%;
   height: 70px;
 }
-/* Nosotros ---------------------------------*/
-.blockNosostros{
+/*--------------------------------------------------------------------*/
+/*---------------------------*Nosotros---------------------------------*/
+.blockNosotros {
   display: flex;
   flex-wrap: wrap;
   margin: 100px;
 }
-.images{
+.blockNosotros p{
+  width: 70%;
+}
+.images {
   width: 250px;
   height: auto;
+  margin: 15px;
+  border: 1px solid black;
+  padding: 3px;
 }
