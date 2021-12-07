@@ -34,6 +34,9 @@ header p {
 }
 /*---------------------------------------------------------------------*/
 /*--------------------------Barra de navegacion------------------------*/
+nav {
+  justify-self: right;
+}
 nav ul {
   list-style-type: none;
   display: flex;
@@ -42,7 +45,7 @@ nav ul li {
   padding: 10px;
 }
 nav ul li:hover {
-  background-color: rgb(189, 144, 86);
+  background-color: rgb(184, 149, 104);
 }
 a {
   color: inherit;
@@ -66,30 +69,46 @@ a {
   background-color: rgba(0, 0, 0, 75%);
 }
 /*--------------------------------------------------------------------*/
-/*----------------------------Division en dos del layaout------------*/
+/*----------------------------Acomodo del layaout---------------------*/
 .twoSections {
   background-color: #e4e2de;
-  display: flex;
+  display: grid;
+  grid-template-columns: auto auto 25%;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "leftUp leftUp right"
+    "leftDown leftDown right";
 }
-/*--------------------------left and right del layout del home---------*/
-.left {
-  margin: 100px 250px;
-}
+/*--------------------------left del layout del home-------------------*/
+/****up del left****/
 .leftUp {
+  grid-area: leftUp;
+}
+.intro {
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   margin-bottom: 100px;
 }
-.right {
-  margin: 250px 100px;
-  border-left: 3px solid tan;
+/****down del left****/
+.leftDown{
+  grid-area: leftDown;
+  display: grid;
+  grid-template-areas: "blogHome salasHome";
+}
+.blogHome {
+  grid-area: blogHome;
+}
+.salasHome {
+  grid-area: salasHome;
 }
 /*--------------------------------------------------------------------*/
 /*--------------------Imagenes del inicio(right del home)-------------*/
+.right {
+  margin: 250px 100px;
+  border-left: 3px solid tan;
+  grid-area: right;
+}
 .cards {
-  width: 50px;
+  width: 75px;
   height: auto;
   margin: 10px;
   border: 5px solid black;
@@ -106,6 +125,7 @@ footer {
   background-color: tan;
   width: 100%;
   height: 70px;
+  font-size: small;
 }
 /*--------------------------------------------------------------------*/
 /*---------------------------*Nosotros---------------------------------*/
@@ -114,7 +134,7 @@ footer {
   flex-wrap: wrap;
   margin: 100px;
 }
-.blockNosotros p{
+.blockNosotros p {
   width: 70%;
 }
 .images {
