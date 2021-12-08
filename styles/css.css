@@ -86,7 +86,7 @@ a {
 }
 .intro {
   text-align: center;
-  margin-bottom: 100px;
+  margin: 5% 10% 5% 10%;
 }
 /****down del left****/
 .leftDown{
@@ -109,13 +109,14 @@ a {
   border-left: 3px solid tan;
   grid-area: right;
   align-self: center;
+  padding: 20px;
 }
 .cards {
   width: 75px;
   height: auto;
   margin: 10px;
   border: 5px solid black;
-  opacity: 0.5;
+  opacity: 0.8;
   align-items: center;
 }
 .cards:hover {
@@ -127,7 +128,7 @@ a {
 footer {
   background-color: tan;
   width: 100%;
-  height: 70px;
+  height: 60px;
   font-size: small;
 }
 /*--------------------------------------------------------------------*/
@@ -146,4 +147,50 @@ footer {
   margin: 15px;
   border: 1px solid black;
   padding: 3px;
+}
+/*---------------------------------------------------------------------*/
+/*---------------------------------Salas-------------------------------*/
+.salas{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  text-align: center;
+  gap: 20px;
+  margin: 5%;
+}
+.h2Salas{
+  text-align: center;
+}
+.contSala{
+  border: 1px solid black;
+  padding: 5px;
+}
+.imgSala1{
+  width: 100%;
+  height: 400px;
+  background-image: url(../img/salas/sala1/sala1.jpg);
+  background-size: cover;
+  border: 1px solid black;
+}
+.imgSala2{
+  width: 100%;
+  height: 400px;
+  background-image: url(../img/salas/sala2/sala2-1.jpg);
+  background-size: cover;
+  background-position:bottom;
+  border: 1px solid black;
+}
+.imgSala3{
+  width: 100%;
+  height: 400px;
+  background-image: url(../img/salas/sala4/sala42.jpg);
+  background-size: cover;
+  border: 1px solid black;
+}
+.imgSala4{
+  width: 100%;
+  height: 400px;
+  background-image: url(../img/salas/sala4/sala41.jpg);
+  background-size: cover;
+  border: 1px solid black;
 }
