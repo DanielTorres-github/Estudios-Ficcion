@@ -74,7 +74,7 @@ a {
   background-color: #e4e2de;
   display: grid;
   grid-template-columns: auto auto 25%;
-  grid-template-rows: auto auto;
+  grid-template-rows: 1fr 1fr;
   grid-template-areas:
     "leftUp leftUp right"
     "leftDown leftDown right";
@@ -96,16 +96,19 @@ a {
 }
 .blogHome {
   grid-area: blogHome;
+  justify-self: center;
 }
 .salasHome {
   grid-area: salasHome;
+  justify-self: center;
+
 }
 /*--------------------------------------------------------------------*/
 /*--------------------Imagenes del inicio(right del home)-------------*/
 .right {
-  margin: 250px 100px;
   border-left: 3px solid tan;
   grid-area: right;
+  align-self: center;
 }
 .cards {
   width: 75px;
@@ -132,7 +135,7 @@ footer {
 .blockNosotros {
   display: flex;
   flex-wrap: wrap;
-  margin: 100px;
+  margin: 3% 5%;
 }
 .blockNosotros p {
   width: 70%;
