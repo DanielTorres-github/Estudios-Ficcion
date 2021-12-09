@@ -1,0 +1,1 @@
+pantallas grandes min-w 1480px
