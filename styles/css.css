@@ -50,6 +50,8 @@ nav ul li a {
 }
 nav ul li a:hover {
   background-image: radial-gradient(rgb(184, 149, 104), tan 85%);
+  cursor: pointer;
+
 }
 /*-------------------------------------------------------------------*/
 /*------------------Texto y backgroud de presentacion----------------*/
@@ -92,6 +94,7 @@ nav ul li a:hover {
 .leftDown {
   grid-area: leftDown;
   display: grid;
+  grid-template-columns: 1fr 1fr;
   grid-template-areas: "blogHome salasHome";
 }
 .blogHome {
@@ -101,11 +104,14 @@ nav ul li a:hover {
 .salasHome {
   grid-area: salasHome;
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-.salasHome a img {
-  height: 150px;
-  width: 150px;
-  padding: 5px;
+.salasHome a div {
+  height: 100px;
+  width: 100px;
+  margin: 5px;
   border: 1px solid black;
 }
 /*--------------------------------------------------------------------*/
@@ -115,18 +121,18 @@ nav ul li a:hover {
   grid-area: right;
   align-self: center;
   padding: 20px;
+  text-align: center;
 }
 .cards {
   width: 75px;
   height: auto;
   margin: 10px;
-  border: 5px solid black;
+  border: 2px solid black;
   opacity: 0.8;
   align-items: center;
 }
 .cards:hover {
   opacity: 1;
-  background: black;
 }
 /*----------------------------------------------------------------------*/
 /*-------------------------------pie de pagina----------------------------*/
@@ -173,85 +179,64 @@ footer {
   border: 1px solid black;
   padding: 5px;
 }
-.imgSala1 {
+.contSala div{
   width: 100%;
   height: 400px;
+}
+.imgSala1 {
   background-image: url(../img/salas/sala1/sala1.jpg);
   background-size: cover;
   border: 1px solid black;
 }
 .imgSala2 {
-  width: 100%;
-  height: 400px;
   background-image: url(../img/salas/sala2/sala2-1.jpg);
   background-size: cover;
   background-position: bottom;
   border: 1px solid black;
 }
 .imgSala3 {
-  width: 100%;
-  height: 400px;
   background-image: url(../img/salas/sala4/sala42.jpg);
   background-size: cover;
   border: 1px solid black;
 }
 .imgSala4 {
-  width: 100%;
-  height: 400px;
   background-image: url(../img/salas/sala4/sala41.jpg);
   background-size: cover;
   border: 1px solid black;
 }
 /*------------------------------------------------------------------------*/
+
 /**************************************************************************/
 /**********************@media queries**************************************/
 @media only screen and (max-width: 1480px){
   .twoSections{
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: 
-    "leftUp leftUp"
-    "leftDown leftDown"
-    "right right";
+    "leftUp"
+    "leftDown"
+    "right";
   }
 }
-
 @media only screen and (max-width: 1200px){
   .twoSections{
     display: grid;
     grid-template-columns: auto ;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-areas: 
-    "leftUp"
-    "leftDown"
-    "leftDown"
-    "right right";
-  }
-  .leftDown{
-    display: grid;
-    grid-template-areas: 
-    "blogHome" 
-    "salasHome";
-  }
-}
-@media only screen and (max-width: 740px){
-  .twoSections{
-    display: grid;
-    grid-template-columns: auto ;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: 
     "leftUp"
     "leftDown"
-    "right right";
+    "right";
   }
+}
+@media only screen and (max-width: 1035px) {
   .leftDown{
     display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr;
     grid-template-areas: 
-    "blogHome" 
+    "blogHome"
     "salasHome";
-  }
-  nav{
-
   }
 }
