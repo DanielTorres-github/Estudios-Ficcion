@@ -155,7 +155,7 @@ footer {
 .blockNosotros p {
 }
 .images {
-  width: 15%;
+  width: 170px;
   height: auto;
   margin: 15px;
   border: 1px solid black;
@@ -266,5 +266,5 @@ footer {
   
 }
 @media only screen and (max-width: 640px){
-  
+
 }
