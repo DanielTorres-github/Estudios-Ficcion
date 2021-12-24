@@ -35,8 +35,8 @@ header p {
 
 /*---------------------------------------------------------------------*/
 /*--------------------------Barra de navegacion------------------------*/
-nav{
-}
+/* nav{
+} */
 nav ul {
   list-style-type: none;
   display: flex;
@@ -152,8 +152,8 @@ footer {
 .blockNosotros {
   margin: 3% 5%;
 }
-.blockNosotros p {
-}
+/* .blockNosotros p {
+} */
 .images {
   width: 170px;
   height: auto;
