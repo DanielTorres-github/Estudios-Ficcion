@@ -13,46 +13,36 @@ h4 {
   color: tan;
   width: 100%;
 }
-.colBody {
-  flex: 1;
-}
-/*--------------------------------------------------------------------*/
-/*-----------------------Caracteristicas del jider--------------------*/
-header {
-  width: 100%;
-  height: auto;
-  background-color: tan;
-  display: flex;
-  align-items: center;
-  position: sticky;
-  top: 0;
-  z-index: 1;
-}
-header p {
-  size: 15px;
-  padding-left: 10px;
-}
-
 /*---------------------------------------------------------------------*/
 /*--------------------------Barra de navegacion------------------------*/
-/* nav{
-} */
-nav ul {
-  list-style-type: none;
-  display: flex;
+nav {
+  background-color: tan;
 }
-a {
+.navbar a{
+  display: flex;
+  align-items: center;
+}
+.navbar a p{
+  margin: 0;
+  margin-left: 15px;
+}
+a{
   color: inherit;
   text-decoration: none;
 }
 nav ul li a {
   padding: 10px;
-  
 }
 nav ul li a:hover {
-  background-image: radial-gradient(rgb(184, 149, 104), tan 85%);
+  /* background-image: radial-gradient(rgb(184, 149, 104), tan 85%); */
+  background-color: rgba(184, 149, 104, 80%);
   cursor: pointer;
-
+}
+.botonNav {
+  background-color: rgba(184, 149, 104, 25%);
+}
+.botonNav:hover {
+  background-color: rgb(184, 149, 104);
 }
 /*-------------------------------------------------------------------*/
 /*------------------Texto y backgroud de presentacion----------------*/
@@ -65,7 +55,18 @@ nav ul li a:hover {
   flex-direction: column;
   justify-content: end;
 }
+.main2 {
+  width: 100%;
+  height: 400px;
+  background-image: url(../img/fondo-inicio2.jpg);
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
 .maintext {
+  width: 100%;
   margin-bottom: 50px;
   color: tan;
   text-align: center;
@@ -75,57 +76,28 @@ nav ul li a:hover {
 /*----------------------------Acomodo del layaout---------------------*/
 .twoSections {
   background-color: #e4e2de;
-  display: grid;
-  grid-template-columns: auto auto 25%;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas:
-    "leftUp leftUp right"
-    "leftDown leftDown right";
 }
 /*--------------------------left del layout del home-------------------*/
 /****up del left****/
-.leftUp {
-  grid-area: leftUp;
-}
 .intro {
   text-align: center;
-  margin: 5% 10% 5% 10%;
+  padding: 5% 10% 5% 10%;
 }
 /****down del left****/
-.leftDown {
-  grid-area: leftDown;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: "blogHome salasHome";
-}
 .blogHome {
-  grid-area: blogHome;
   text-align: center;
 }
 .salasHome {
-  grid-area: salasHome;
   text-align: center;
-  display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-}
-.salasHome a div {
-  height: 100px;
-  width: 100px;
-  margin: 5px;
-  border: 1px solid black;
-}
-.salasHome a div:hover{
-  transform: scale(1.1);
 }
 /*--------------------------------------------------------------------*/
 /*--------------------Imagenes del inicio(right del home)-------------*/
 .right {
   border-left: 3px solid tan;
-  grid-area: right;
   align-self: center;
-  padding: 20px;
   text-align: center;
+  margin: 5% 0% 5% 0%;
 }
 .cards {
   width: 75px;
@@ -184,7 +156,7 @@ footer {
   border: 1px solid black;
   padding: 5px;
 }
-.contSala div{
+.contSala div {
   width: 100%;
   height: 400px;
 }
@@ -217,7 +189,7 @@ footer {
 
 /**************************************************************************/
 /**********************@media queries**************************************/
-@media only screen and (max-width: 1480px){
+/* @media only screen and (max-width: 1480px){
   .twoSections{
     display: grid;
     grid-template-columns: auto;
@@ -267,4 +239,4 @@ footer {
 }
 @media only screen and (max-width: 640px){
 
-}
+} */
