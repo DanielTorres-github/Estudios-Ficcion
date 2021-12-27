@@ -11,9 +11,9 @@
     <link rel="stylesheet" href="../styles/css.css" />
 </head>
 
-<body>
+<body class="backg-color">
     <!--Aca se encuentra el logo y la barra de links de la pagina-->
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
         <a href="../index.html" class="navbar-brand">
             <img src="../img/logo.png" width="70px" height="70px" alt="Estudios Ficcion" />
             <p>Estudios Ficcion</p>
@@ -22,7 +22,7 @@
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse " id="navbarNav">
+        <div class="collapse navbar-collapse barraNav" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link rounded" href="../index.html">Inicio <span class="sr-only">(current)</span></a>
@@ -42,11 +42,49 @@
             </ul>
         </div>
     </nav>
-    <div class="colBody">
+    <div>
         <!--imagenes y descripcion de las distintas salas y precio-->
         <h2 class="h2Salas">Nuestras salas</h2>
-        <section class="salas">
-            <article class="contSala">
+        <section class="salas container-fluid">
+            <div class="row">
+                <div class="card contSala col-6">
+                    <img src="../img/salas/sala1/sala1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4 class="card-title">Sala economica</h4>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                <div class="card contSala col-6">
+                    <img src="../img/salas/sala2/sala2-1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4 class="card-title">Card title</h4>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                <div class="card contSala col-6">
+                    <img src="../img/salas/sala4/sala42.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4 class="card-title">Card title</h4>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                <div class="card contSala col-6">
+                    <img src="../img/salas/sala4/sala41.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4 class="card-title">Card title</h4>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <!-- <article class="contSala">
                 <div class="imgSala1"></div>
                 <h4>Sala economica</h4>
 
@@ -82,12 +120,12 @@
                     tortor. Nam quis metus at leo tincidunt aliquet id eget augue. Ut eleifend tellus blandit
                     ullamcorper
                     imperdiet. Aenean.</p>
-            </article>
+            </article> -->
         </section>
     </div>
 
     <!--Pie de pagina-->
-    <footer>
+    <footer class="fixed-bottm">
         <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Copyright 2021 | E-mail: EstudiosFiccion@yahoo.com</a>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"

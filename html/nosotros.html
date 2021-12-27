@@ -13,40 +13,45 @@
 
 <body>
     <!--Aca se encuentra el logo y la barra de links de la pagina-->
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
         <a href="../index.html" class="navbar-brand">
             <img src="../img/logo.png" width="70px" height="70px" alt="Estudios Ficcion" />
             <p>Estudios Ficcion</p>
         </a>
-    <button class="navbar-toggler botonNav" type="button" data-toggle="collapse" data-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse " id="navbarNav">
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link rounded" href="../index.html">Inicio <span
-                        class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link rounded" href="../html/nosotros.html">Nosotros</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link rounded" href="../html/salas.html">Salas</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link rounded" href="../html/blog.html">Blog</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link rounded" href="../html/contacto.html">Reservar Estudio</a>
-            </li>
-        </ul>
-    </div>
-</nav>
+        <button class="navbar-toggler botonNav" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse barraNav" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link rounded" href="../index.html">Inicio <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link rounded" href="../html/nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link rounded" href="../html/salas.html">Salas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link rounded" href="../html/blog.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link rounded" href="../html/contacto.html">Reservar Estudio</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
     <!--Historia del estudio-->
     <div class="colBody blockNosotros">
         <h2>¿Como empezó todo?</h2>
+        <div class="card float-right" style="width: 10rem;">
+            <img src="../img/fundador.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">José Feliciano, fundador de Estudios Ficcion</p>
+            </div>
+        </div>
         <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis eligendi dolor repellendus officia id
             quidem. Nobis explicabo adipisci dolorem inventore corporis minima earum aperiam molestiae mollitia. Culpa
@@ -55,7 +60,6 @@
             Velit, animi rem nisi perspiciatis laboriosam, doloremque nobis minus fugit fugiat sapiente modi asperiores
             quo?
         </p>
-        <img src="../img/fundador.jpg" alt="" class="images fundador">
         <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima neque ipsum, tempora iste quidem sapiente
             quam illum? Esse quo inventore rem! Rerum quidem, ipsam laborum maxime eos dolorem culpa officiis? Lorem
@@ -73,7 +77,12 @@
             nobis
         </p>
         <h4>Primeros trabajos reconocidos</h4>
-        <img src="../img/portfolio/Ledzeppelin-I.jpg" alt="" class="images discos">
+        <div class="card float-left" style="width: 18rem;">
+            <img src="../img/portfolio/Ledzeppelin-I.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">José Feliciano, fundador de Estudios Ficcion</p>
+            </div>
+        </div>
         <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure possimus quam amet libero hic dignissimos
             quasi voluptatum ea, laudantium adipisci ducimus facere temporibus aperiam odio autem aspernatur. Itaque,
@@ -92,7 +101,12 @@
             reprehenderit? Nesciunt deserunt totam quis, nobis reprehenderit sunt repudiandae soluta tenetur odit!
             Officiis deserunt quasi sed.
         </p>
-        <img src="../img/portfolio/divididos.jpg" alt="" class="images discos">
+        <div class="card float-right" style="width: 18rem;">
+            <img src="../img/portfolio/divididos.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">José Feliciano, fundador de Estudios Ficcion</p>
+            </div>
+          </div>
         <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quas dicta quisquam laboriosam non nam maxime
             harum quo tenetur rem eos nemo et blanditiis vitae cupiditate, esse beatae iste sed!
@@ -130,7 +144,7 @@
         </p>
     </div>
     <!--Pie de pagina-->
-    <footer>
+    <footer class="">
         <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Copyright 2021 | E-mail: EstudiosFiccion@yahoo.com</a>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"

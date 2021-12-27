@@ -4,6 +4,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #e4e2de;
 }
 h2 {
   color: tan;
@@ -18,6 +19,9 @@ h4 {
 nav {
   background-color: tan;
 }
+.barraNav{
+  margin-left: 50px;
+}
 .navbar a{
   display: flex;
   align-items: center;
@@ -26,15 +30,11 @@ nav {
   margin: 0;
   margin-left: 15px;
 }
-a{
-  color: inherit;
-  text-decoration: none;
-}
-nav ul li a {
+
+nav ul li {
   padding: 10px;
 }
 nav ul li a:hover {
-  /* background-image: radial-gradient(rgb(184, 149, 104), tan 85%); */
   background-color: rgba(184, 149, 104, 80%);
   cursor: pointer;
 }
@@ -73,10 +73,6 @@ nav ul li a:hover {
   background-color: rgba(0, 0, 0, 75%);
 }
 /*--------------------------------------------------------------------*/
-/*----------------------------Acomodo del layaout---------------------*/
-.twoSections {
-  background-color: #e4e2de;
-}
 /*--------------------------left del layout del home-------------------*/
 /****up del left****/
 .intro {
@@ -118,47 +114,33 @@ footer {
   width: 100%;
   height: 60px;
   font-size: small;
+  bottom: 0;
 }
 /*--------------------------------------------------------------------*/
 /*---------------------------*Nosotros---------------------------------*/
 .blockNosotros {
   margin: 3% 5%;
 }
-/* .blockNosotros p {
-} */
-.images {
-  width: 170px;
-  height: auto;
-  margin: 15px;
-  border: 1px solid black;
-  padding: 3px;
+.card p {
+  font-size: x-small;
 }
-.fundador {
-  float: right;
-}
-.discos {
-  float: left;
+.card{
+  margin: 25px;
+  background-color: #e4e2de;
+  padding: 5px;
 }
 /*---------------------------------------------------------------------*/
 /*---------------------------------Salas-------------------------------*/
 .salas {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  text-align: center;
-  gap: 20px;
-  margin: 5%;
+  /* gap: 20px; */
+  /* margin: 5%; */
 }
 .h2Salas {
   text-align: center;
+  margin-top: 25px;
 }
 .contSala {
   border: 1px solid black;
-  padding: 5px;
-}
-.contSala div {
-  width: 100%;
-  height: 400px;
 }
 .imgSala1 {
   background-image: url(../img/salas/sala1/sala1.jpg);

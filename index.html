@@ -13,7 +13,7 @@
 <body>
     <main>
         <!--Aca se encuentra el logo y la barra de links de la pagina-->
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar navbar-expand-lg navbar-light sticky-top">
                 <a href="./index.html" class="navbar-brand">
                     <img src="./img/logo.png" width="70px" height="70px" alt="Estudios Ficcion" />
                     <p>Estudios Ficcion</p>
@@ -22,7 +22,7 @@
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse " id="navbarNav">
+            <div class="collapse navbar-collapse barraNav" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link rounded" href="./index.html">Inicio <span
@@ -54,7 +54,7 @@
             </div>
         </div>
 
-        <div class="twoSections container-fluid">
+        <div class="container-fluid">
             <!--lateral izquierdo con Descripcion breve del local-->
             <div class="row">
                 <section class="col-12 col-lg-9">
@@ -84,16 +84,16 @@
                                 data-ride="carousel" width="70px" height="70px">
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
-                                        <img src="./img/salas/sala1/sala1.jpg" class="d-block w-100" alt="...">
+                                        <img src="./img/salas/sala1/sala1.jpg" class="d-block w-100 img-fluid" alt="...">
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="./img/salas/sala2/sala2-2.jpg" class="d-block w-100" alt="...">
+                                        <img src="./img/salas/sala2/sala2-2.jpg" class="d-block w-100 img-fluid" alt="...">
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="./img/salas/sala4/sala44.jpg" class="d-block w-100" alt="...">
+                                        <img src="./img/salas/sala4/sala44.jpg" class="d-block w-100 img-fluid" alt="...">
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="./img/salas/sala4/sala41.jpg" class="d-block w-100" alt="...">
+                                        <img src="./img/salas/sala4/sala41.jpg" class="d-block w-100 img-fluid" alt="...">
                                     </div>
                                 </div>
                                 <button class="carousel-control-prev" type="button"
@@ -139,7 +139,7 @@
         </div>
         <div class="main main2"></div>
         <!--Pie de pagina-->
-        <footer>
+        <footer class="fixed-botto">
             <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Copyright 2021 | E-mail: EstudiosFiccion@yahoo.com</a>
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
