@@ -74,20 +74,25 @@ nav ul li a:hover {
 }
 /*--------------------------------------------------------------------*/
 /*--------------------------left del layout del home-------------------*/
-/****up del left****/
+/****TEXTO INTRODUCCION****/
 .intro {
   text-align: center;
   padding: 5% 10% 5% 10%;
 }
-/****down del left****/
+/****CARRUSELES DE HOME****/
 .blogHome {
   text-align: center;
 }
 .salasHome {
   text-align: center;
-  justify-content: center; 
   margin-bottom: 25px;
 }
+.contenedorCarrusel{
+  margin:0;
+ }
+ .carousel-inner{
+   height: 25vh;
+ }
 /*--------------------------------------------------------------------*/
 /*--------------------Imagenes del inicio(right del home)-------------*/
 .right {
@@ -132,20 +137,17 @@ footer {
 }
 /*---------------------------------------------------------------------*/
 /*---------------------------------Salas-------------------------------*/
-.salas {
-  /* gap: 20px; */
-  /* margin: 5%; */
-}
+/* .salas {
+  gap: 20px;
+  margin: 5%;
+} */
 .h2Salas {
   text-align: center;
   margin-top: 25px;
 }
-.contSala {
+/* .contSala {
   border: 1px solid black;
-}
-.img-fluid{
-  height: auto;
-}
+} */
 .imgSala1 {
   background-image: url(../img/salas/sala1/sala1.jpg);
   background-size: cover;
@@ -173,59 +175,3 @@ footer {
 }
 /*------------------------------------------------------------------------*/
 
-.carrusel-item img{
-  height: 300px;
-}
-/**************************************************************************/
-/**********************@media queries**************************************/
-/* @media only screen and (max-width: 1480px){
-  .twoSections{
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: 
-    "leftUp"
-    "leftDown"
-    "right";
-  }
-}
-@media only screen and (max-width: 1200px){
-  .twoSections{
-    display: grid;
-    grid-template-columns: auto ;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: 
-    "leftUp"
-    "leftDown"
-    "right";
-  }
-}
-@media only screen and (max-width: 1035px) {
-  .leftDown{
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
-    "blogHome"
-    "salasHome";
-  }
-  .salas {
-    display: grid;
-    grid-template-columns: 1fr ;
-    grid-template-rows: 1fr ;
-    text-align: center;
-    gap: 20px;
-    margin: 5%;
-  }
-}
-@media only screen and (max-width: 730px){
-  .headerNav{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-}
-@media only screen and (max-width: 640px){
-
-} */
