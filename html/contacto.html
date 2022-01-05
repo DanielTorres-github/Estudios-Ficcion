@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8" />
@@ -42,6 +42,7 @@
       </ul>
     </div>
   </nav>
+  <!-- Fin de barra de navegacion -->
   <section class="container">
     <!-- Formulario de reserva -->
     <h2 class="col-12 text-center mt-5">Reservar Sala</h2>
@@ -63,13 +64,14 @@
           </div>
           <div class="form-group">
             <label for="validationDefault04">Seleccione una sala</label>
-            <select class="custom-select" id="validationDefault04" required>
+            <select class="custom-select" id="validationDefault04" aria-describedby="salasSelect" required>
               <option selected disabled value=""></option>
-              <option>Sala economica</option>
-              <option>Sala regular</option>
-              <option>Sala Grande</option>
-              <option>Sala Deluxe</option>
+              <option>Sala economica $1500</option>
+              <option>Sala regular $2500</option>
+              <option>Sala Grande $3500</option>
+              <option>Sala Deluxe $4500</option>
             </select>
+            <small id="salasSelect" class="form-text text-muted">Todos los precios equivalen a sesiones de 3 horas</small>
           </div>
           <div class="row">
             <div class="form-group col">
@@ -110,7 +112,7 @@
           </tbody>
         </table>
         <div class="d-flex justify-content-center">
-          <iframe 
+          <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d817.9384290741415!2d-57.9385868!3d-34.9126296!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e6162c1c650f%3A0xa3ac756aa5d315b1!2sEstadio%20UNO%20-%20Jorge%20Luis%20Hirschi!5e0!3m2!1ses-419!2sar!4v1640785959719!5m2!1ses-419!2sar"
             style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8" />
@@ -14,15 +14,23 @@
 <body>
     <!--Aca se encuentra el logo y la barra de links de la pagina-->
     <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+
+        <!-- Logo del local (Inicio) -->
         <a href="../index.html" class="navbar-brand">
             <img src="../img/logo.png" width="70px" height="70px" alt="Estudios Ficcion" />
             <p>Estudios Ficcion</p>
         </a>
+        <!-- Logo del local (Fin) -->
+
+        <!-- Collapse button -->
         <button class="navbar-toggler botonNav" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
+
+        <!-- Barra de navegacion (inicio) -->
         <div class="collapse navbar-collapse barraNav" id="navbarNav">
+            <!-- Links -->
             <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link rounded" href="../index.html">Inicio <span class="sr-only">(current)</span></a>
@@ -42,184 +50,187 @@
             </ul>
         </div>
     </nav>
-    <div class="container-fluid">
-        <!--imagenes y descripcion de las distintas salas y precio-->
-        <h2 class="h2Salas col-12">Nuestras salas</h2>
-        <section class="bloqueCards row card-columns">
-            <div class="card col-11 col-sm-5">
-                <img src="../img/salas/sala1/sala1.jpg" class="card-img-top" alt="Sala Economica">
-                <div class="card-body">
-                    <h4 class="card-title">Sala economica</h4>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                        the card's content.</p>
-                    <button data-toggle="collapse" data-target="#demo1" class="btn btn-primary">Collapsible</button>
+    <!-- Barra de navegacion (FIn) -->
 
-                    <div id="demo1" class="collapse">
-                        <p>
+    <h2 class="h2Salas col-12">Nuestras salas</h2>
 
-                            - 1 Amplificador Acoustic 220 para bajo con gabinete 4x12 con eminence.
+    <!-- Cards de Salas (Inicio)-->
+    <section class="bloqueCards container-fluid row card-columns">
+        <div class="card col-11 col-sm-5">
+            <img src="../img/salas/sala1/sala1.jpg" class="card-img-top" alt="Sala Economica">
+            <div class="card-body">
+                <h4 class="card-title">Sala economica</h4>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                    the card's content.</p>
+                <button data-toggle="collapse" data-target="#demo1" class="btn btn-primary">Collapsible</button>
 
-                            - 1 Head Marshall Valvestate para Guitarra (3 canales con FS).
+                <div id="demo1" class="collapse">
+                    <p>
 
-                            - Gabinete Marshall 4x12
+                        - 1 Amplificador Acoustic 220 para bajo con gabinete 4x12 con eminence.
 
-                            - 1 Amplificador Roland Jazz Chorus 120 con 2x12
+                        - 1 Head Marshall Valvestate para Guitarra (3 canales con FS).
 
-                            - 1 Bateria Yamaha Rythm Mate (Bombo, Tarola, Tom de Aire, Tom de piso)
+                        - Gabinete Marshall 4x12
 
-                            - Contratiempos SBR 14''
+                        - 1 Amplificador Roland Jazz Chorus 120 con 2x12
 
-                            - Crash Ride 18''/45
+                        - 1 Bateria Yamaha Rythm Mate (Bombo, Tarola, Tom de Aire, Tom de piso)
 
-                            - Atril adicional para platillos.
+                        - Contratiempos SBR 14''
 
-                            - Mezcladora de 8 Canales Behringer Eurorack MX802A
+                        - Crash Ride 18''/45
 
-                            - Poder Backstage MX4
+                        - Atril adicional para platillos.
 
-                            - 2 Microfonos con Atriles.
+                        - Mezcladora de 8 Canales Behringer Eurorack MX802A
 
-                            - 1 Bocina Amplificada para Secuencias / Teclados
+                        - Poder Backstage MX4
 
-                            - 2 Bocinas MRS al Mixer para voces.
+                        - 2 Microfonos con Atriles.
 
-                            - 1 pedal de Distorsion Cats Music (por si quieres usar el Roland en canal sucio y no tienes
-                            pedales)</p>
-                    </div>
+                        - 1 Bocina Amplificada para Secuencias / Teclados
+
+                        - 2 Bocinas MRS al Mixer para voces.
+
+                        - 1 pedal de Distorsion Cats Music (por si quieres usar el Roland en canal sucio y no tienes
+                        pedales)</p>
                 </div>
             </div>
-            <div class="card col-11 col-sm-5">
-                <img src="../img/salas/sala2/sala2-1.jpg" class="card-img-top" alt="Sala regular">
-                <div class="card-body">
-                    <h4 class="card-title">Card title</h4>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                        the card's content.</p>
-                    <button data-toggle="collapse" data-target="#demo2" class="btn btn-primary">Collapsible</button>
+        </div>
+        <div class="card col-11 col-sm-5">
+            <img src="../img/salas/sala2/sala2-1.jpg" class="card-img-top" alt="Sala regular">
+            <div class="card-body">
+                <h4 class="card-title">Card title</h4>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                    the card's content.</p>
+                <button data-toggle="collapse" data-target="#demo2" class="btn btn-primary">Collapsible</button>
 
-                    <div id="demo2" class="collapse">
-                        <p>
+                <div id="demo2" class="collapse">
+                    <p>
 
-                            - 1 Amplificador Acoustic 220 para bajo con gabinete 4x12 con eminence.
+                        - 1 Amplificador Acoustic 220 para bajo con gabinete 4x12 con eminence.
 
-                            - 1 Head Marshall Valvestate para Guitarra (3 canales con FS).
+                        - 1 Head Marshall Valvestate para Guitarra (3 canales con FS).
 
-                            - Gabinete Marshall 4x12
+                        - Gabinete Marshall 4x12
 
-                            - 1 Amplificador Roland Jazz Chorus 120 con 2x12
+                        - 1 Amplificador Roland Jazz Chorus 120 con 2x12
 
-                            - 1 Bateria Yamaha Rythm Mate (Bombo, Tarola, Tom de Aire, Tom de piso)
+                        - 1 Bateria Yamaha Rythm Mate (Bombo, Tarola, Tom de Aire, Tom de piso)
 
-                            - Contratiempos SBR 14''
+                        - Contratiempos SBR 14''
 
-                            - Crash Ride 18''/45
+                        - Crash Ride 18''/45
 
-                            - Atril adicional para platillos.
+                        - Atril adicional para platillos.
 
-                            - Mezcladora de 8 Canales Behringer Eurorack MX802A
+                        - Mezcladora de 8 Canales Behringer Eurorack MX802A
 
-                            - Poder Backstage MX4
+                        - Poder Backstage MX4
 
-                            - 2 Microfonos con Atriles.
+                        - 2 Microfonos con Atriles.
 
-                            - 1 Bocina Amplificada para Secuencias / Teclados
+                        - 1 Bocina Amplificada para Secuencias / Teclados
 
-                            - 2 Bocinas MRS al Mixer para voces.
+                        - 2 Bocinas MRS al Mixer para voces.
 
-                            - 1 pedal de Distorsion Cats Music (por si quieres usar el Roland en canal sucio y no tienes
-                            pedales)</p>
-                    </div>
+                        - 1 pedal de Distorsion Cats Music (por si quieres usar el Roland en canal sucio y no tienes
+                        pedales)</p>
                 </div>
             </div>
-            <div class="card col-11 col-sm-5">
-                <img src="../img/salas/sala4/sala42.jpg" class="card-img-top" alt="Sala grande">
-                <div class="card-body">
-                    <h4 class="card-title">Card title</h4>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                        the card's content.</p>
-                    <button data-toggle="collapse" data-target="#demo3" class="btn btn-primary">Collapsible</button>
+        </div>
+        <div class="card col-11 col-sm-5">
+            <img src="../img/salas/sala4/sala42.jpg" class="card-img-top" alt="Sala grande">
+            <div class="card-body">
+                <h4 class="card-title">Card title</h4>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                    the card's content.</p>
+                <button data-toggle="collapse" data-target="#demo3" class="btn btn-primary">Collapsible</button>
 
-                    <div id="demo3" class="collapse">
-                        <p>
-                            - 1 Amplificador Acoustic 220 para bajo con gabinete 4x12 con eminence.
+                <div id="demo3" class="collapse">
+                    <p>
+                        - 1 Amplificador Acoustic 220 para bajo con gabinete 4x12 con eminence.
 
-                            - 1 Head Marshall Valvestate para Guitarra (3 canales con FS).
+                        - 1 Head Marshall Valvestate para Guitarra (3 canales con FS).
 
-                            - Gabinete Marshall 4x12
+                        - Gabinete Marshall 4x12
 
-                            - 1 Amplificador Roland Jazz Chorus 120 con 2x12
+                        - 1 Amplificador Roland Jazz Chorus 120 con 2x12
 
-                            - 1 Bateria Yamaha Rythm Mate (Bombo, Tarola, Tom de Aire, Tom de piso)
+                        - 1 Bateria Yamaha Rythm Mate (Bombo, Tarola, Tom de Aire, Tom de piso)
 
-                            - Contratiempos SBR 14''
+                        - Contratiempos SBR 14''
 
-                            - Crash Ride 18''/45
+                        - Crash Ride 18''/45
 
-                            - Atril adicional para platillos.
+                        - Atril adicional para platillos.
 
-                            - Mezcladora de 8 Canales Behringer Eurorack MX802A
+                        - Mezcladora de 8 Canales Behringer Eurorack MX802A
 
-                            - Poder Backstage MX4
+                        - Poder Backstage MX4
 
-                            - 2 Microfonos con Atriles.
+                        - 2 Microfonos con Atriles.
 
-                            - 1 Bocina Amplificada para Secuencias / Teclados
+                        - 1 Bocina Amplificada para Secuencias / Teclados
 
-                            - 2 Bocinas MRS al Mixer para voces.
+                        - 2 Bocinas MRS al Mixer para voces.
 
-                            - 1 pedal de Distorsion Cats Music (por si quieres usar el Roland en canal sucio y no tienes
-                            pedales)</p>
-                    </div>
+                        - 1 pedal de Distorsion Cats Music (por si quieres usar el Roland en canal sucio y no tienes
+                        pedales)</p>
                 </div>
             </div>
-            <div class="card col-11 col-sm-5">
-                <img src="../img/salas/sala4/sala41.jpg" class="card-img-top" alt="Sala Deluxe">
-                <div class="card-body">
-                    <h4 class="card-title">Card title</h4>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                        the card's content.</p>
-                    <button data-toggle="collapse" data-target="#demo4" class="btn btn-primary">Collapsible</button>
+        </div>
+        <div class="card col-11 col-sm-5">
+            <img src="../img/salas/sala4/sala41.jpg" class="card-img-top" alt="Sala Deluxe">
+            <div class="card-body">
+                <h4 class="card-title">Card title</h4>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                    the card's content.</p>
+                <button data-toggle="collapse" data-target="#demo4" class="btn btn-primary">Collapsible</button>
 
-                    <div id="demo4" class="collapse">
-                        <p>
-                            - 1 Amplificador Acoustic 220 para bajo con gabinete 4x12 con eminence.
+                <div id="demo4" class="collapse">
+                    <p>
+                        - 1 Amplificador Acoustic 220 para bajo con gabinete 4x12 con eminence.
 
-                            - 1 Head Marshall Valvestate para Guitarra (3 canales con FS).
+                        - 1 Head Marshall Valvestate para Guitarra (3 canales con FS).
 
-                            - Gabinete Marshall 4x12
+                        - Gabinete Marshall 4x12
 
-                            - 1 Amplificador Roland Jazz Chorus 120 con 2x12
+                        - 1 Amplificador Roland Jazz Chorus 120 con 2x12
 
-                            - 1 Bateria Yamaha Rythm Mate (Bombo, Tarola, Tom de Aire, Tom de piso)
+                        - 1 Bateria Yamaha Rythm Mate (Bombo, Tarola, Tom de Aire, Tom de piso)
 
-                            - Contratiempos SBR 14''
+                        - Contratiempos SBR 14''
 
-                            - Crash Ride 18''/45
+                        - Crash Ride 18''/45
 
-                            - Atril adicional para platillos.
+                        - Atril adicional para platillos.
 
-                            - Mezcladora de 8 Canales Behringer Eurorack MX802A
+                        - Mezcladora de 8 Canales Behringer Eurorack MX802A
 
-                            - Poder Backstage MX4
+                        - Poder Backstage MX4
 
-                            - 2 Microfonos con Atriles.
+                        - 2 Microfonos con Atriles.
 
-                            - 1 Bocina Amplificada para Secuencias / Teclados
+                        - 1 Bocina Amplificada para Secuencias / Teclados
 
-                            - 2 Bocinas MRS al Mixer para voces.
+                        - 2 Bocinas MRS al Mixer para voces.
 
-                            - 1 pedal de Distorsion Cats Music (por si quieres usar el Roland en canal sucio y no tienes
-                            pedales)</p>
-                    </div>
+                        - 1 pedal de Distorsion Cats Music (por si quieres usar el Roland en canal sucio y no tienes
+                        pedales)</p>
                 </div>
             </div>
+        </div>
+    </section>
+    <!-- Cards de Salas (Fin)-->
 
-        </section>
-    </div>
 
     <!--Pie de pagina-->
-    <footer class="fixed-bottm">
+    <footer>
         <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Copyright 2021 | E-mail: EstudiosFiccion@yahoo.com</a>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
