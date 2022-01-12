@@ -1,0 +1,45 @@
+
+//--------------------------Barra de navegacion------------------------//
+nav {
+    background-color: $main-color;
+    ul {
+      li {
+        padding: 10px;
+  
+        a:hover {
+          background-color: $hover-color;
+          cursor: pointer;
+        }
+        .botonNav {
+          background-color: rgba(184, 149, 104, 25%);
+        }
+      }
+    }
+  }
+  .botonNav:hover {
+    background-color: rgb(184, 149, 104);
+  }
+  .barraNav {
+    margin-left: 50px;
+  }
+  .navbar {
+    padding: 0;
+    padding-left: 1rem;
+  
+    a {
+      display: flex;
+      align-items: center;
+  
+      p {
+        margin: 0;
+        margin-left: 15px;
+      }
+    }
+  }
+  a {
+    color: black;
+  }
+  a:hover {
+      color: black;
+      text-decoration: none;
+    }
