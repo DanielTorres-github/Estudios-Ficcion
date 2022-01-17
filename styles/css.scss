@@ -1,11 +1,12 @@
 // Paleta de colores
-$main-color: tan;
-$bg-color: #e4e2de;
+$main-color: rgb(219, 176, 120);
+$bg-color: #e4e2deef;
 $hover-color: rgba(184, 149, 104, 100%);
 //
 
 // Fuentes
 $font-main: Verdana, sans-serif;
+$font-desc: 25px;
 //
 //height de foto presentacion
 $alto: 400px;
@@ -52,14 +53,9 @@ footer {
   justify-content: end;
 }
 .main2 {
-  width: 100%;
+  @extend .main;
   height: $alto/2;
-  background-image: url(../img/fondo-inicio2.jpg);
-  background-size: cover;
   background-position: bottom;
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
 }
 .maintext {
   width: 100%;
@@ -74,6 +70,7 @@ footer {
 .intro {
   text-align: center;
   padding: 5% 10% 5% 10%;
+  font-size: $font-desc;
 }
 //***CARRUSELES DEL HOME****/
 .blogHome {
@@ -81,8 +78,7 @@ footer {
   margin-bottom: 25px;
 }
 .salasHome {
-  text-align: center;
-  margin-bottom: 25px;
+  @extend .blogHome;
 }
 .contenedorCarrusel {
   margin: 0;
@@ -110,7 +106,11 @@ footer {
 .img-thumbnail {
   padding: 0;
 }
-
+footer{
+  div{
+    text-align: center;
+  }
+}
 //------------------------------------------------------------------------//
 iframe {
   align-items: center;
